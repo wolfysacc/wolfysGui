@@ -8,6 +8,4 @@ local function webImport(file)
 end
 
 webImport("ui")
-local LOADING_MODULE = webImport("LOADING_MODULE")
-
-require(LOADING_MODULE)()
+webImport("LOADING_MODULE")
