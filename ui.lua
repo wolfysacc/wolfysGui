@@ -143,7 +143,7 @@ local LoadSequence = {
 					local SelectedModule = require(v)
 
 					PulseFocusInstance()
-					-- setreadonly(SelectedModule, false)
+					setreadonly(SelectedModule, false)
 					PulseCheck()
 
 
@@ -173,11 +173,9 @@ local LoadSequence = {
 				SelectedModule.sparerounds = math.huge PulseEditValue()
 				EditedValue.Text = "[SPARE ROUNDS] : "..SelectedModule.sparerounds.." ["..progressLoad.."/"..countOfModules.."] "
 
-				SelectedModule.penetrationdepth = math.huge PulseEditValue()
+				SelectedModule.penetrationdepth = math.huge 
+				PulseEditValue()
 				EditedValue.Text = "[PENETRATION DEPTH] : "..SelectedModule.penetrationdepth.." ["..progressLoad.."/"..countOfModules.."] "
-
-				SelectedModule.camkickspeed = 0 PulseEditValue()
-				EditedValue.Text = "['RECOIL' SETTING] : "..SelectedModule.camkickspeed.." ["..progressLoad.."/"..countOfModules.."] "
 
 			end
 
@@ -225,8 +223,22 @@ thing = UIS.InputBegan:Connect(function(input, gameProccesedEvent)
 	end
 end)
 
+spawn(function()
+	while true do
+		local Info2 = TweenInfo.new(1)
+		local Tween2 = game:GetService("TweenService"):Create(VISUALIZER,Info2,{TextTransparency = .5})
+		Tween2:Play()
+		wait(1)
+		local Info3 = TweenInfo.new(1)
+		local Tween3 = game:GetService("TweenService"):Create(VISUALIZER,Info3,{TextTransparency = 0})
+		Tween3:Play()
+		wait(1)
+	end	
+end)
+
 VISUALIZER.Text = VisualSequence[1]
 wait(1.5)
+
 
 -- setPulse.Disabled = false
 VISUALIZER.Text = VisualSequence[2]
