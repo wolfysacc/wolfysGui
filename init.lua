@@ -8,4 +8,3 @@ local function webImport(file)
 end
 
 webImport("ui")
-webImport("LOADING_MODULE")
