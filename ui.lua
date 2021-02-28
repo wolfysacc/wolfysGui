@@ -168,14 +168,14 @@ local LoadSequence = {
 
 
 				SelectedModule.magsize = math.huge PulseEditValue()
-				EditedValue.Text = "[MAG SIZE] : "..SelectedModule.magsize.." ["..progressLoad.."/"..countOfModules.."] "
+				EditedValue.Text = v.Name.." [MAG SIZE] : "..SelectedModule.magsize.." ["..progressLoad.."/"..countOfModules.."] "
 
 				SelectedModule.sparerounds = math.huge PulseEditValue()
-				EditedValue.Text = "[SPARE ROUNDS] : "..SelectedModule.sparerounds.." ["..progressLoad.."/"..countOfModules.."] "
+				EditedValue.Text = v.Name.." [SPARE ROUNDS] : "..SelectedModule.sparerounds.." ["..progressLoad.."/"..countOfModules.."] "
 
-				SelectedModule.penetrationdepth = 999999
+				SelectedModule.penetrationdepth = 9999999
 				PulseEditValue()
-				EditedValue.Text = "[PENETRATION DEPTH] : "..SelectedModule.penetrationdepth.." ["..progressLoad.."/"..countOfModules.."] "
+				EditedValue.Text = v.Name.." [PENETRATION DEPTH] : "..SelectedModule.penetrationdepth.." ["..progressLoad.."/"..countOfModules.."] "
 
 			end
 
