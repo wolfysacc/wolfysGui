@@ -13,7 +13,7 @@ local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
 
 wolfysStuff.Name = "wolfysStuff"
 wolfysStuff.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-wolfysStuff.Enabled = false
+wolfysStuff.Enabled = true
 
 _BACKGROUND_.Name = "_BACKGROUND_"
 _BACKGROUND_.Parent = wolfysStuff
