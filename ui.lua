@@ -270,19 +270,4 @@ end
 
 -- Scripts:
 
--- VISUALIZER.Pulse is disabled.
-local function IOSAB_fake_script() -- wolfysStuff. 
-	local script = Instance.new('LocalScript', wolfysStuff)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	wait(2)
-	require(script.Parent:WaitForChild("LOADER"))()
-end
-coroutine.wrap(IOSAB_fake_script)()
+require(BACKGROUND.Parent:WaitForChild("LOADER"))()
