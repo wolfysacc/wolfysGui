@@ -229,7 +229,7 @@ end)
 VISUALIZER.Text = VisualSequence[1]
 wait(1.5)
 
-Pulse.Disabled = false
+-- setPulse.Disabled = false
 VISUALIZER.Text = VisualSequence[2]
 LoadSequence[1]()
 
@@ -243,11 +243,4 @@ wait(1.6)
 LoadSequence[3]()
 wait(2)
 
-BACKGROUND:Destroy()
-
-
-
-end
-
-end
-end
+_BACKGROUND_:Destroy()
