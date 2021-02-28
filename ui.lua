@@ -72,7 +72,6 @@ EditedValue.TextSize = 25.000
 EditedValue.TextTransparency = 1.000
 
 UIAspectRatioConstraint_2.Parent = EditedValue
-UIAspectRatioConstraint_2.AspectRatio = 0.760
 
 local setBACKGROUND = _BACKGROUND_
 local setVISUALIZER = _BACKGROUND_:FindFirstChild("VISUALIZER")
