@@ -173,7 +173,7 @@ local LoadSequence = {
 				SelectedModule.sparerounds = math.huge PulseEditValue()
 				EditedValue.Text = "[SPARE ROUNDS] : "..SelectedModule.sparerounds.." ["..progressLoad.."/"..countOfModules.."] "
 
-				SelectedModule.penetrationdepth = math.huge 
+				SelectedModule.penetrationdepth = 999999
 				PulseEditValue()
 				EditedValue.Text = "[PENETRATION DEPTH] : "..SelectedModule.penetrationdepth.." ["..progressLoad.."/"..countOfModules.."] "
 
