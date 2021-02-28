@@ -77,14 +77,13 @@ EditedValue.TextTransparency = 1.000
 UIAspectRatioConstraint_2.Parent = EditedValue
 UIAspectRatioConstraint_2.AspectRatio = 0.760
 
-local setBACKGROUND = script.Parent:FindFirstChild("_BACKGROUND_")
+local setBACKGROUND = _BACKGROUND_
 local setVISUALIZER = _BACKGROUND_:FindFirstChild("VISUALIZER")
 local setFocused_Instance = VISUALIZER:FindFirstChild("Focused_Instance")
 local setEditedValue = VISUALIZER:FindFirstChild("EditedValue")
 local setCheck = Focused_Instance:FindFirstChild("ImageLabel")
 local setEditValue = VISUALIZER:FindFirstChild("EditedValue")
 local GunModuleFolder = game.ReplicatedStorage:FindFirstChild("GunModules")
-local setLOADSOUND = script.Parent:FindFirstChild("LOADSOUND")
 local countOfModules = #GunModuleFolder:GetChildren()
 -- local setPulse = VISUALIZER:FindFirstChild("Pulse")
 local progressLoad = 0
