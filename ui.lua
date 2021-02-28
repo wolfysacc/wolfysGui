@@ -171,6 +171,9 @@ local LoadSequence = {
 				SelectedModule.penetrationdepth = 9999999
 				PulseEditValue()
 				EditedValue.Text = v.Name.." [PENETRATION DEPTH] : "..SelectedModule.penetrationdepth.." ["..progressLoad.."/"..countOfModules.."] "
+				
+				PulseCheck()
+				
 
 			end
 
