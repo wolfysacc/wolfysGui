@@ -236,7 +236,7 @@ VISUALIZER.Text = VisualSequence[1]
 wait(1.5)
 
 
--- setPulse.Disabled = false
+setPulse.Disabled = false
 VISUALIZER.Text = VisualSequence[2]
 LoadSequence[1]()
 
