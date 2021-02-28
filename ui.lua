@@ -24,7 +24,6 @@ VISUALIZER.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VISUALIZER.BackgroundTransparency = 1.000
 VISUALIZER.Position = UDim2.new(0, 706, 0, 376)
 VISUALIZER.Size = UDim2.new(1.395805e-10, 0, 6.0594911e-11, 0)
-VISUALIZER.SizeConstraint = Enum.SizeConstraint.RelativeXX
 VISUALIZER.ZIndex = 999
 VISUALIZER.Font = Enum.Font.GothamBold
 VISUALIZER.Text = "..."
