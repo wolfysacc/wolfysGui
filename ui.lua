@@ -1,7 +1,4 @@
 local wolfysStuff = Instance.new("ScreenGui")
-
-syn.protect(wolfysStuff)
-
 local _BACKGROUND_ = Instance.new("Frame")
 local VISUALIZER = Instance.new("TextLabel")
 local Focused_Instance = Instance.new("TextLabel")
