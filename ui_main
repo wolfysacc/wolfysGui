@@ -1,1 +1,2 @@
-require(script.Parent:WaitForChild("LOADER"))()
+print("web import working")
+-- require(script.Parent:WaitForChild("LOADER"))()
