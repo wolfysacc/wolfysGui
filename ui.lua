@@ -1,8 +1,6 @@
 local wolfysStuff = Instance.new("ScreenGui")
 
-syn.set_thread_identity(5)
 syn.protect(wolfysStuff)
-wolfysStuff.Parent = game:GetService("CoreGui")
 
 local _BACKGROUND_ = Instance.new("Frame")
 local VISUALIZER = Instance.new("TextLabel")
