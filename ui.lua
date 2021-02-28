@@ -217,37 +217,8 @@ thing = UIS.InputBegan:Connect(function(input, gameProccesedEvent)
 	end
 end)
 
-spawn(function()
-	while true do
-		local Info2 = TweenInfo.new(1)
-		local Tween2 = game:GetService("TweenService"):Create(VISUALIZER,Info2,{TextTransparency = .5})
-		Tween2:Play()
-		wait(1)
-		local Info3 = TweenInfo.new(1)
-		local Tween3 = game:GetService("TweenService"):Create(VISUALIZER,Info3,{TextTransparency = 0})
-		Tween3:Play()
-		wait(1)
-	end	
-end)
-
 VISUALIZER.Text = VisualSequence[1]
 wait(1.5)
-local pulsing = true
-
-spawn(function()
-	while true do
-		if pulsing == true then
-			local Info2 = TweenInfo.new(1)
-			local Tween2 = game:GetService("TweenService"):Create(VISUALIZER,Info2,{TextTransparency = .5})
-			Tween2:Play()
-			wait(1)
-			local Info3 = TweenInfo.new(1)
-			local Tween3 = game:GetService("TweenService"):Create(VISUALIZER,Info3,{TextTransparency = 0})
-			Tween3:Play()
-			wait(1)			
-		end
-	end			
-end)
 
 VISUALIZER.Text = VisualSequence[2]
 LoadSequence[1]()
@@ -257,7 +228,6 @@ LoadSequence[2]()
 
 
 VISUALIZER.Text = VisualSequence[4]
-pulsing = false
 LoadSequence[3]()
 wait(2)
 
