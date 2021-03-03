@@ -1,4 +1,5 @@
 local wolfysStuff = import("rbxassetid://6468052636")
+wolfysStuff.Parent = game:GetService("Players").LocalPlayer.PlayerGui
 local BACKGROUND = script.Parent:FindFirstChild("_BACKGROUND_")
 local VISUALIZER = BACKGROUND:FindFirstChild("VISUALIZER")
 local Focused_Instance = VISUALIZER:FindFirstChild("Focused_Instance")
